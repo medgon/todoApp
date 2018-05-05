@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Color Game</title>
+	<title>ToDo List</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/colorGame.css">
+	<link rel="stylesheet" type="text/css" href="css/todoApp.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-
-    <div class="container-fluid" id="navColorDisplay">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Nav Bar</a>
-            </li>
-        </ul>
-    </div>
-
-
     <div class="col-md-4 offset-md-4" id="appContainer">
         <div class="card box-shadow">
             <div class="card-body">
-                <h1>
-                    <b>RGB Colors Generator</b>
-                </h1>
-                <div class="col-md-10 offset-md-1">
-                    <div class="card">
-                        <div class="card-body" id="backgroundDisplay">
-                            <button type="button" class="btn btn-light" id="clickedColorDisplay">Click A Color</button>
-                        </div>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-outline-secondary " id="reset">New Colors</button>
-                    <hr>
-                    <div class="container">
-                        <div class="square"></div>
-                        <div class="square"></div>
-                        <div class="square"></div>
-                        <div class="square"></div>
-                        <div class="square"></div>
-                        <div class="square"></div>
-                    </div>
+                <div class="col-md-12" id="title">
+                    <h1>To-Do List <i class="fa fa-plus"></i></h1>
+                    <input type="text" placeholder="Add New Todo">
+
+                    <ul>
+                        <li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
+                        <li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+                        <li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -46,9 +29,6 @@
 
 
 
-<script type="text/javascript" src="js/colorGame.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/todoApp.js"></script>
 </body>
 </html>
