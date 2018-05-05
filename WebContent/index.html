@@ -4,25 +4,31 @@
 	<title>ToDo List</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/todoApp.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\rx480\IdeaProjects\todoApp\WebContent\vendor\font-awesome-4.7.0\css\font-awesome.css" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="col-md-4 offset-md-4" id="appContainer">
+    <div class="col-md-6 offset-md-3" id="appContainer">
         <div class="card box-shadow">
             <div class="card-body">
-                <div class="col-md-12" id="title">
-                    <h1>To-Do List <i class="fa fa-plus"></i></h1>
-                    <input type="text" placeholder="Add New Todo">
+                <div class="col-md-10 offset-md-1">
+                    <h3 style="text-align: center">
+                        ToDo List
+                        <button type="button" class="btn btn-outline-secondary btn-sm float-right" id="addTodo"><i class="fa fa-plus"> New</i></button>
+                    </h3>
+                    <div class="form-group col-md-8 offset-md-2">
+                        <input type="text" class="form-control form-control-sm" id="addTodo" placeholder="Add New Todo">
+                    </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span><i class="fa fa-circle-thin"></i></span>  Create <i class="fa fa-trash pull-right"></i></span></li>
+                            <li class="list-group-item"><span><i class="fa fa-circle-thin"></i></span>  Awesome <i class="fa fa-trash pull-right"></i></li>
+                            <li class="list-group-item"><span><i class="fa fa-circle-thin"></i></span>  ToDo <i class="fa fa-trash pull-right"></i></li>
+                            <li class="list-group-item"><span><i class="fa fa-circle-thin"></i></span>  List <i class="fa fa-trash pull-right"></i></li>
+                        </ul>
+                    </div>
 
-                    <ul>
-                        <li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
-                        <li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
-                        <li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
